@@ -1,0 +1,77 @@
+$black-text: #222;
+
+$green: #032;
+$blue: #06a;
+$red: #831;
+$pink: #b06;
+
+$dark-green: #021;
+$dark-blue: #059;
+$dark-red: #720;
+$dark-pink: #a05;
+
+$transparent-green: rgba(70, 100, 90, 0.65);
+$transparent-blue: rgba(50, 60, 80, 0.75);
+$transparent-red: rgba(80, 50, 50, 0.65);
+$transparent-pink: rgba(70, 20, 50, 0.75);
+
+$success-button-color: #5aac44;
+$success-button-color-hover: #3a8a24;
+
+$transparent-black: rgba(0, 0, 0, 0.2);
+$less-transparent-black: rgba(0, 0, 0, 0.5);
+$transparent-white: rgba(255, 255, 255, 0.4);
+$white: #fbfbfb;
+
+$list-width: 300px;
+$list-radius: 6px;
+
+// ---------------------------------------------------------
+// adminator @default
+// ---------------------------------------------------------
+$default-white: #fff;
+$default-clouds: #f7f7f7;
+$default-fog: #eeeeee;
+$default-grey: gray;
+$default-slate: #656565;
+$default-red: #DB4337;
+$offscreen-size: 150px;
+$border-color: #e6ecf5;
+$collapsed-size: 70px;
+$header-height: 65px;
+$grey-900: #313435;
+$default-text-color: #72777a;
+$default-danger: #ff3c7e;
+$default-dark: #313435;
+$default-info: #0f9aee;
+$md-blue-500: #2196f3;
+
+
+
+
+// ---------------------------------------------------------
+// @Breakpoints
+// ---------------------------------------------------------
+
+$breakpoint-xl : 1440px;
+$breakpoint-lg : 1200px;
+$breakpoint-md : 992px;
+$breakpoint-sm : 768px;
+$breakpoint-xs : 0;
+
+$breakpoints: (
+        "xl\\+" "screen and (min-width: #{$breakpoint-xl})",
+        "lg\\+" "screen and (min-width: #{$breakpoint-lg})",
+        "md\\+" "screen and (min-width: #{$breakpoint-md})",
+        "sm\\+" "screen and (min-width: #{$breakpoint-sm})",
+        "xs\\+" "screen and (min-width: #{$breakpoint-xs})",
+
+        "xl-" "screen and (max-width: #{$breakpoint-xl - 1px})",
+        "lg-" "screen and (max-width: #{$breakpoint-lg - 1px})",
+        "md-" "screen and (max-width: #{$breakpoint-md - 1px})",
+        "sm-" "screen and (max-width: #{$breakpoint-sm - 1px})",
+
+        "lg" "screen and (min-width: #{$breakpoint-lg - 1px}) and (max-width: #{$breakpoint-xl - 1px})",
+        "md" "screen and (min-width: #{$breakpoint-md - 1px}) and (max-width: #{$breakpoint-lg - 1px})",
+        "sm" "screen and (min-width: #{$breakpoint-sm - 1px}) and (max-width: #{$breakpoint-md - 1px})",
+);
