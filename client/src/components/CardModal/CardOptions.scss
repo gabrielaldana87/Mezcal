@@ -1,0 +1,123 @@
+@import "../../styles/index";
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0 8px;
+
+  @media (max-width: 550px) {
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.options-list-button {
+  display: flex;
+  align-items: center;
+  height: 33px;
+  margin: 0 3px 4px 3px;
+  padding: 0 6px;
+  border: 0;
+  border-radius: 3px;
+  //color: black;
+  background: rgba(255, 255, 255, 0.33);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.options-list-button:hover,
+.options-list-button:focus {
+  background: white;
+}
+
+.modal-icon {
+  flex-shrink: 0;
+  margin-bottom: 3px;
+}
+
+.calendar-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.calendar-underlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  background: white;
+}
+
+.calendar-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+
+  button {
+    width: 120px;
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #bbb;
+  }
+
+  .calendar-save-button {
+    color: white;
+    background: $success-button-color;
+  }
+
+  .calendar-save-button:hover {
+    background: $success-button-color-hover;
+  }
+}
+
+.modal-notepad-picker-wrapper {
+  //this line is different than in react-kanban; where it is relative
+  position: fixed;
+}
+
+.modal-notepad-picker {
+  position: absolute;
+  top: 100%;
+  //left: 50%;
+  //transform: translateX(-50%);
+  //display: flex;
+  flex-wrap: wrap;
+  //width: 120px;
+  margin-top: 10px;
+  padding:  8px 6px 6px 6px;;
+  border-radius: $list-radius;
+  //color: black;
+  background: white;
+  transition: box-shadow 0.15s, background 0.3s;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.22);
+  font-weight: 700;
+  text-align: center;
+}
+
+.color-picker-color {
+  width: 36px;
+  height: 36px;
+  margin: 2px;
+  border: 1px #999 solid;
+  border-radius: 3px;
+}

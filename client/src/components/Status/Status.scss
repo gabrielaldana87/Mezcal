@@ -1,17 +1,60 @@
 .btn{
-  padding: 0rem 0.25rem;
-  font-size: .5rem;
+  padding: 0rem 0.2rem;
+  font-size: .45rem;
   border-radius: 0.15rem;
 }
 .btn-secondary{
-  border: none;
-  background-color: rgba(255, 255, 255, 0.33);
+  //background-color: rgba(255, 255, 255, 0.33);
+  //color: rgba(255, 255, 255, 0);
+}
+
+//Schedule Tasks Done
+.btn-secondary.Label_8491898225746876360 {
+  background-color: #4986e7;
+  border-color: white;
+  //border-color: rgba(255, 255, 255, 0.33);
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(255, 255, 255, 0);}
+
+//Schedule Cancelled
+.btn-secondary.Label_7605088220257879142 {
+  background-color: #fb4c2f;
+  border-color: white;
+  //border-color: rgba(251, 76, 47, 0.33);
+  border-width: 1px;
+  border-style: solid;
   color: rgba(255, 255, 255, 0);
 }
+
+//Schedule Still Needs Time
+.btn-secondary.Label_7437376097989230949 {
+  background-color: #ffad46;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(255, 255, 255, 0);
+}
+
+//Schedule Reschedule
+.btn-secondary.Label_550790012261636894 {
+  background-color: #2da2bb;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(255, 255, 255, 0);
+}
+
 .mr-2{
   margin-right: 0.15rem !important;
 }
 
 .btn-toolbar {
-  padding: 0px 0px 8px 8px;
+  padding: 0px 12px 8px 8px;
+}
+
+span.time-span {
+  padding: 0px 0px;
+  font-size: .56rem;
+  font-weight: 700;
 }

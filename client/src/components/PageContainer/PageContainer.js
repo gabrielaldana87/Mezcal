@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Board from '../Board/Board';
 import Header from '../Header/Header';
-import Protocol from '../Protocol/Protocol';
+import Portfolio from '../Portfolio/Portfolio'
+
 import './PageContainer.scss';
 
 
@@ -12,13 +13,13 @@ class PageContainer extends Component {
   }
   ;
   render = () => {
+    const { children } = this.props;
     return (
       <div className='page-container'>
         <Header/>
         <main className='main-content bgc-grey-100'>
           <div id='mainContent'>
-            {/*<Protocol/>*/}
-            <Board/>
+            { children }
           </div>
         </main>
       </div>

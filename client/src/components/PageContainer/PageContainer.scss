@@ -15,7 +15,7 @@
 
 .page-container {
   min-height: 100vh;
-  padding-left: $offscreen-size;
+  //padding-left: $offscreen-size;
   transition: all 0.2s ease;
   background-color: $default-clouds;
 
@@ -78,7 +78,7 @@
 
 .is-collapsed {
   .page-container {
-    padding-left: $collapsed-size;
+    //padding-left: $collapsed-size;
 
     @include to($breakpoint-md) {
       padding-left: 0;

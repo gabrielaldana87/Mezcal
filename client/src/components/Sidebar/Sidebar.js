@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import NavItem from './NavItem/NavItem';
 import './Sidebar.scss';
 
 class Sidebar extends Component {
@@ -37,6 +38,7 @@ class Sidebar extends Component {
             </div>
           </div>
           <ul className='sidebar-menu scrollable pos-r'>
+            <NavItem/>
           </ul>
         </div>
       </div>

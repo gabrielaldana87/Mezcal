@@ -1,5 +1,12 @@
 @import "../../styles/settings/variables";
 
+.header-wrap {
+  position: relative;
+  background-color: $default-fog;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
 .list-wrapper {
   display: inline-flex;
   flex-direction: column;

@@ -32,6 +32,8 @@ $add-board-focus-bg: #ccc;
   display: inline-flex;
   flex-direction: column;
   width: 4 * $board-width + 8 * $board-margin;
+  padding: 75px 90px 20px;
+  min-height: calc(100vh - 61px);
 }
 
 @media (max-width: 4 * $board-width + 8 * $board-margin + 2 * $main-margin) {

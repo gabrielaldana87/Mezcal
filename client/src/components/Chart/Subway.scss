@@ -1,0 +1,104 @@
+
+path{
+  /*stroke-linejoin:round;
+  stroke:red;*/
+  fill: rgba(255,255,255,0);
+}
+path:hover{
+  stroke:red;
+  stroke-width:1;
+}
+
+.borough_map{
+  fill:rgba(165,165,165,.3);
+}
+
+
+.line-1  {stroke: #EE352E;}
+.line-2  {stroke: #EE352E;}
+.line-3  {stroke: #EE352E;}
+.line-4  {stroke: #00933C;}
+.line-5  {stroke: #00933C;}
+.line-6  {stroke: #00933C;}
+.line-B  {stroke: #FF6319;}
+.line-D  {stroke: #FF6319;}
+.line-F  {stroke: #FF6319;}
+.line-M  {stroke: #FF6319;}
+.line-A  {stroke: #2850AD;}
+.line-C  {stroke: #2850AD;}
+.line-E  {stroke: #2850AD;}
+.line-G  {stroke: #6CBE45;}
+.line-J  {stroke: #996633;}
+.line-Z  {stroke: #996633;}
+.line-L  {stroke: #A7A9AC;}
+.line-N  {stroke: #FCCC0A;}
+.line-Q  {stroke: #FCCC0A;}
+.line-R  {stroke: #FCCC0A;}
+.line-S  {stroke: #808183;}
+.line-7  {stroke: purple;}
+.line-Air { stroke: steelblue;}
+.line-SI {stroke: grey;}
+
+svg{
+  background-color:white;
+}
+.place-label {
+  fill: #444;
+}
+
+text{
+  font-family: "Avenir Next", Calibri Helvetica Arial, sans-serif;
+  font-size: 10px;
+}
+
+text.label{
+  font-size: 12px;
+}
+
+.subunit-label{
+  fill: #777;
+  fill-opacity: .5;
+  font-size:20px;
+  font-weight:300;
+  text-anchor:middle;
+}
+
+.div_leftcorner{
+
+  margin-top:60px;
+  margin-bottom:20px;
+  margin-left:20px;
+}
+
+.A { fill: #663398;}
+.B { fill: steelblue; }
+.I { fill:  grey; }
+.P { fill: #F72459; }
+.Q { fill: #F72459; }
+.W { fill: #26A65B; }
+.X { fill: #F6AB36; }
+.U { fill: #F6AB36; }
+.Z { fill: purple ; }
+
+.container{
+  position: fixed;
+}
+
+#tooltip{
+  position: absolute;
+  z-index: 2;
+  background: rgba(0,153,76,.8);
+  width: 130px;
+  height: 20px;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  top: -150px;
+  left: -150px;
+  font-family: "Calibri";
+}
+
+.neigh-text{
+  //transform: rotate(-45deg);
+}
+

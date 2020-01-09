@@ -15,7 +15,7 @@
 // ---------------------------------------------------------
 
 .sidebar {
-  background-color: $default-red;
+  background-color: $default-fog;
   bottom: 0;
   overflow: hidden;
   position: fixed;
@@ -28,8 +28,8 @@
   ul {
     list-style-type: none;
   }
-
-  @include between($breakpoint-md, $breakpoint-xl) {
+  //xx should be here
+  @include between($breakpoint-xs, $breakpoint-xx) {
     width: $collapsed-size;
 
     .sidebar-inner {
@@ -46,10 +46,12 @@
       }
 
       .sidebar-menu {
+        margin-top: 10px;
         overflow-x: hidden;
 
         > li {
           > a {
+            border-bottom: 1px solid transparent;
             .title {
               display: none;
             }
@@ -82,8 +84,11 @@
         }
 
         .sidebar-menu {
+          margin-top: 10px;
           > li {
             > a {
+              border-bottom: 1px solid $border-color;
+              transition: all 0.2s ease;
               .title {
                 display: inline-block;
               }
@@ -112,6 +117,7 @@
     left: -$offscreen-size;
     width: calc(#{$offscreen-size} - 30px);
   }
+
 }
 
 // ---------------------------------------------------------
@@ -340,9 +346,9 @@
 
         .sidebar-menu {
           overflow-x: hidden;
-
           > li {
             > a {
+              border-bottom: 1px solid transparent;
               .title {
                 display: none;
               }
@@ -377,6 +383,7 @@
           .sidebar-menu {
             > li {
               > a {
+                border-bottom: 1px solid $border-color;
                 .title {
                   display: inline-block;
                 }
@@ -420,6 +427,7 @@
         .sidebar-menu {
           > li {
             > a {
+              border-bottom: 1px solid $border-color;
               .title {
                 display: inline-block;
               }

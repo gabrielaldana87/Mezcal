@@ -1,4 +1,4 @@
-import marked from "marked";
+import marked from 'marked';
 
 // Create HTML string from user generated markdown.
 // There is some serious hacks going on here with regards to checkboxes.
@@ -7,7 +7,7 @@ import marked from "marked";
 // The id attribute is then used in the clickhandler of the card to identify which checkbox is clicked.
 const formatMarkdown = markdown => {
   let i = 0;
-  return marked(markdown, { sanitize: true, gfm: true, breaks: true })
+  let html = marked(markdown, { sanitize: true, gfm: true, breaks: true })
     .replace(/<a/g, '<a target="_blank"')
     .replace(/\[(\s|x)\]/g, match => {
       let newString;
@@ -19,6 +19,16 @@ const formatMarkdown = markdown => {
       i += 1;
       return newString;
     });
+  return html
+    .replaceAll(html, /<p/g, `<p id=${html.match(/{(.*)}/).pop()}`)
+    .replaceAll(html, /{(.*)}/, '')
+    //.replace(/<p/g, `<p id=${html.match(/{(.*)}/).pop()}`)
+    //.replace(/{(.*)}/, '')
+    //;
+};
+
+String.prototype.replaceAll = (str, find, replace) => {
+  return str.replace(new RegExp(find, 'g'), replace);
 };
 
 export default formatMarkdown;

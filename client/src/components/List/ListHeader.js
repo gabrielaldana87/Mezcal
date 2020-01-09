@@ -10,7 +10,7 @@ class ListTitle extends Component {
       newTitle: props.listTitle
     };
   }
-
+  ;
   render () {
     const { isOpen,  newTitle } = this.state;
     const { listTitle } = this.props;

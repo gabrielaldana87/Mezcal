@@ -9,11 +9,14 @@ class Header extends Component {
       user: {}
     }
     ;
-  }  componentDidMount () {
+  }
+  ;
+  componentDidMount () {
     fetch('/api/user')
       .then(res => res.json())
       .then(user => this.setState(mapStateToProps({user})) )
   }
+  ;
   render = () => {
     const { user } = this.state;
     return (

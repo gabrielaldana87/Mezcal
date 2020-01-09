@@ -1,11 +1,12 @@
 @import "../../styles/settings/variables";
 
 .list-header {
-  display: inline-flex;
+  //display: inline-block;
   flex-shrink: 0;
   border-top-right-radius: $list-radius;
   border-top-left-radius: $list-radius;
   font-size: 1em;
+  position: absolute;
 }
 
 .list-title-button {
@@ -20,7 +21,6 @@
   overflow-wrap: break-word;
   cursor: pointer !important;
   background: $default-fog;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.32);
   letter-spacing: 1px;
 }
 
