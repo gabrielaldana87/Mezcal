@@ -35,7 +35,7 @@ $default-fog: #eeeeee;
 $default-grey: gray;
 $default-slate: #656565;
 $default-red: #DB4337;
-$offscreen-size: 150px;
+$offscreen-size: 200px;
 $border-color: #e6ecf5;
 $collapsed-size: 70px;
 $header-height: 65px;
@@ -53,6 +53,7 @@ $md-blue-500: #2196f3;
 // @Breakpoints
 // ---------------------------------------------------------
 
+$breakpoint-xx : 2000px;
 $breakpoint-xl : 1440px;
 $breakpoint-lg : 1200px;
 $breakpoint-md : 992px;
