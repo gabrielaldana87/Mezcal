@@ -20,7 +20,7 @@ class Portfolio extends Component {
           './images/portfolio/subway_map.png'
         ]}
         productName='Subway Paths'
-        description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
+        description='A project to engage with Income Inequality along the path of the New York City Subway.'
         url='/subway'
         buttonText='View Project'
       />
@@ -29,7 +29,7 @@ class Portfolio extends Component {
           './images/portfolio/Race_Map.gif'
         ]}
         productName='US Census API'
-        description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
+        description='Explore Demographic and Economic variables from the US Census as Interactive Graphs.'
         url='/discovery'
         buttonText='View Project'
       />
@@ -38,7 +38,7 @@ class Portfolio extends Component {
           './images/portfolio/time_extraction_of_patient_paths.png'
         ]}
         productName='Walking Paths'
-        description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
+        description='Visualize the walking path of an individual using geolocational data. Measure distance travelled using interactive brush.'
         url='https://github.com/nukeop'
       />
       <ProductCard
@@ -46,7 +46,7 @@ class Portfolio extends Component {
           './images/portfolio/network_diagram.png'
         ]}
         productName='Network Diagram'
-        description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
+        description='Discover a social network of interactions amongst users with group clusters to showcase communities.'
         url='https://github.com/nukeop'
       />
       <ProductCard
@@ -54,8 +54,7 @@ class Portfolio extends Component {
           './images/portfolio/heart_rate_monitors.png'
         ]}
         productName='Ocelot'
-        description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
-        url='https://github.com/nukeop'
+        description='A visualization platform to monitor clinical patient state and determine patterns in patient physiology along with medication administration.'
       />
       </div>
       </>

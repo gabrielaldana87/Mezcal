@@ -15,7 +15,7 @@ class Cards extends Component {
         <div className='cards'>
           {cards.map((cardId, index) => (
             <Card
-              key={cardId}
+              key={cardId._id}
               cardId={cardId}
               index={index}
               listId={listId}

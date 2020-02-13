@@ -1,0 +1,69 @@
+{
+  "data": [{
+    "title":"Board",
+    "icon": "ti-clipboard",
+    "url":"/board"
+  },{
+    "title":"Calendar",
+    "icon":"ti-calendar",
+    "url":"/calendar"
+  },{
+    "title": "Notes",
+    "icon": "ti-check-box",
+    "url": "/notes"
+  },{
+    "title": "Visualizations",
+    "icon": "ti-gallery",
+    "url": "/visualizations"
+  },{
+    "title": "Goals",
+    "icon": "ti-check-box",
+    "url": "/goals",
+    "children": [{
+      "title":"Budgetting",
+      "url":"/budgetting"
+    },{
+      "title": "Fitness + Gym",
+      "url":"/fitness"
+    },{
+      "title": "Cooking + Groceries",
+      "url":"/cooking"
+    },{
+      "title": "Food Goals",
+      "url":"/food_goals"
+    },{
+      "title": "Home + Mainteinance",
+      "url":"/home_maintenance"
+    },{
+      "title": "Interviewing + Job Hunt",
+      "url":"/interviewing"
+    },{
+      "title": "Professional Development",
+      "url":"/professional"
+    },{
+      "title": "Work Goals",
+      "url":"/work"
+    },{
+      "title": "Estado",
+      "url":"/estado"
+    },{
+      "title": "Family",
+      "url":"/Family"
+    },{
+      "title": "Personal Goals",
+      "url":"/personal"
+    },{
+      "title": "Personal Care",
+      "url":"/care"
+    },{
+      "title": "Personal Enrichment",
+      "url":"/enrichment"
+    },{
+      "title": "Socializing",
+      "url":"/socializing"
+    },{
+      "title": "Other",
+      "url":"/other"
+    }]
+  }]
+}

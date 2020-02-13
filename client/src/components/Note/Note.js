@@ -32,7 +32,7 @@ class Note extends Component {
     const { newText } = this.state;
     const { card, dispatch } = this.props;
     if ( newText === '' ) return;
-    const cardId = card.id;
+    const cardId = card._id;
     dispatch({
       type: 'ADD_NOTE',
       payload: { noteText: newText, cardId }
