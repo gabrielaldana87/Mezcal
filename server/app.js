@@ -3,6 +3,7 @@ const { MongoClient } = require('mongodb');
 const passport = require('passport');
 const configurePassport =  require('./config/passport');
 const api = require('./routes/api');
+const census = require('./routes/census');
 const auth = require('./routes/auth');
 const path = require('path');
 
@@ -20,8 +21,9 @@ MongoClient.connect(`${process.env.MONGODB_URL}/${process.env.MONGODB_NAME}`,
   app.use(express.static(path.join(__dirname, '../client/public')));
   app.use(passport.initialize());
   app.use(passport.session());
-  app.use('/auth', auth);
+  app.use('/auth', auth );
   app.use('/api', api(db) );
+  app.use('/census', census() )
 
 });
 
