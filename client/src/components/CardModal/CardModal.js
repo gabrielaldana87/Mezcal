@@ -62,7 +62,7 @@ class CardModal extends Component {
     const style = {
       content: {
         top: Math.min(
-          boundingRect.top + 5,
+          boundingRect.top - 35,
           window.innerHeight - boundingRect.height - 18
         ),
         left: isCardNearRightBorder ? null : boundingRect.left + boundingRect.width,
@@ -95,7 +95,7 @@ class CardModal extends Component {
       >
         <CardOptions
           isNotePadEditOpen={ isNotePadEditOpen }
-          card={ cardElement }
+          card={ card }
           color={ color }
           background={ background }
           boundingRect={ boundingRect }

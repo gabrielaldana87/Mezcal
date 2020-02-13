@@ -1,6 +1,7 @@
 import React,  { Component } from 'react';
 import PropTypes from 'prop-types';
 import Note from '../Note/Note';
+import Dropdown from '../Dropdown/Dropdown';
 import './CardOptions.scss';
 
 class CardOptions extends Component {
@@ -61,6 +62,9 @@ class CardOptions extends Component {
             <i className='c-light-blue-500 ti-book'></i>
           &nbsp;Notes
         </button>
+        <Dropdown
+          label_id={ card._id }
+        />
         {isNotePadEditOpen && (
           <div
             className='modal-notepad-picker'
