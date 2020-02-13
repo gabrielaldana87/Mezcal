@@ -31,13 +31,14 @@ class Card extends Component {
   handleClick (event) {
     const { tagName } = event.target;
     if (tagName.toLowerCase() === 'p') {
+      console.log(event.target)
       this.paragraph = event.target;
       this.toggleCardEditor(event);
     }
   }
   ;
   render () {
-    const { card, index, listId } = mapStateToProps(this.props);
+    const { card, index, listId , key } = mapStateToProps(this.props);
     const { isModalOpen } = this.state;
     const squares = this.state.squares;
     const schedule = _.find(squares, o => o.id === card._id );
