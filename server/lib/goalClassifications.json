@@ -1,0 +1,597 @@
+{
+  "goal_classifications": [{
+    "id": "Label_1117418948357254359",
+    "name": "Fulfillment/Professional Development",
+    "goals":[{
+      "goal_name": "Master JavaScript",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 4,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Master Web Development",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 4,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Master React",
+      "target": {
+        "frequency": 2,
+        "period": "monthly",
+        "estimate": {
+          "duration": 4,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "HTML/CSS Enrichment",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "ECMAScript 6 Enhancement",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "REST + APIs",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "PortFolio Projects",
+      "target": {
+        "frequency": 3,
+        "period": "monthly",
+        "estimate": {
+          "duration": 4,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Algorithm + Data Structures",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Video Projects",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "GitHub + Versioning",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 2,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Attend Professional/ Networking",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 4,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Go Over Lesson on LinkedIn Learning",
+      "target": {
+        "frequency": 2,
+        "period": "monthly",
+        "estimate": {
+          "duration": 3.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Study One Algorithms in JavaScript Question",
+      "target": {
+        "frequency": 5,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_2695632765995747611",
+    "name": "Fulfillment/Family",
+    "goals":[{
+      "goal_name":"Visit My Family More Often",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 36,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name":"Plan Activity w/ My Family",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 4,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name":"Plan a Trip w/ My Family",
+      "target": {
+        "frequency": 2,
+        "period": "yearly",
+        "estimate": {
+          "duration": 72,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_2793841075121359295",
+    "name": "Fulfillment/Budgeting",
+    "goals": [{
+      "goal_name": "Monitor Budget",
+      "target": {
+        "frequency": 2,
+        "period":"monthly",
+        "estimate": {
+          "duration": 2,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Budget w/ Michael",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 2,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_321762675192156868",
+    "name": "Fulfillment/Socializing",
+    "goals": [{
+      "goal_name": "Meetup a Friend",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Tricks",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 2,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_3534785379269313476",
+    "name": "Fulfillment/Home + Maintenance",
+    "goals": [{
+      "goal_name": "Clean/Tidy Up Apartment",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+         "duration": 2,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Wash Dishes",
+      "target": {
+        "frequency": 3,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_592392061998919015",
+    "name": "Fulfillment/Estado"
+    }, {
+    "id": "Label_6334025315020622113",
+    "name": "Fulfillment/Personal Enrichment",
+    "goals": [{
+      "goal_name": "Read More Books",
+      "target": {
+        "frequency": 6,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "PickUp a Book @ BookShop",
+      "target": {
+        "frequency": 1,
+        "period": "quarter",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Order an Audible Book",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Read The Economist",
+      "target": {
+        "frequency": 2,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1.5,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_6468899110555404113",
+    "name": "Fulfillment/Personal Care",
+    "goals": [{
+      "goal_name": "Get HairCut @ Tonys",
+      "target":{
+        "frequency": 2,
+        "period": "monthly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Use Bar",
+      "target":{
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.25,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Use WhiteStrips",
+      "target":{
+        "frequency": 1,
+        "period": "quarter",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_6777952705937714868",
+    "name": "Fullfillment/Fitness + Gym",
+    "goals": [{
+      "goal_name": "Change WorkOut Routine",
+      "target": {
+        "frequency": 5,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Shift to Taking 2 Morning Classes",
+      "target": {
+        "frequency": 2,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Enroll in a RX or CrossFit Regimen",
+      "target": {
+        "frequency": 1,
+        "period": "quarterly",
+        "estimate": {
+          "duration": 1.5,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_6972065008596675649",
+    "name": "Fulfillment/Cooking + Grocery",
+    "goals": [{
+      "goal_name": "Go Shooping @ Traders",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Take Turns Cooking Food from Traders",
+      "target": {
+        "frequency": 2,
+        "period": "weekely",
+        "estimate": {
+          "duration": 2,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Prepare a Meal Plan w/ Food from Traders",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1.5,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_769754223111852324",
+    "name": "Fulfillment/Food Goals",
+    "goals": [{
+      "goal_name": "Make Protein Shakes After Gym",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.25,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Eat Protein Bars Before or After Gym",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.25,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Order MealPals",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.125,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Avoid Eating Desserts + Baked Goods",
+      "target": {
+        "frequency": 3,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.125,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_8738965220440462842",
+    "name": "Fulfillment/Work Tasks",
+    "goals": [{
+      "goal_name": "Expand Node.js Capability @ NYP",
+      "target": {
+      }
+    },{
+      "goal_name": "Bring React Project to Production",
+      "target": {
+      }
+    },{
+      "goal_name": "Establish Project Management Cycle within Team",
+      "target": {
+      }
+    },{
+      "goal_name": "Bring git into Development Cycle",
+      "target": {
+      }
+    },{
+      "goal_name": "Work w/ Jacek on a Project",
+      "target": {
+      }
+    },{
+      "goal_name": "Extend Ocelot Use Case",
+      "target": {
+      }
+    },{
+      "goal_name": "Work w/ Ruchi to Parse Messages",
+      "target": {
+      }
+    }]
+    }, {
+    "id": "Label_6747139232125575780",
+    "name": "Fulfillment/Personal Goals",
+    "goals":[{
+      "goal_name": "Wake Up @ 6AM",
+      "target": {
+        "frequency": 3,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Prepare BreakFast + KiKi",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1.25,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Document Week",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Monitor Goals",
+      "target": {
+        "frequency": 6,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Go To Bed @ 10PM",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Block Out Time (No TV + No Phone)",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Review NetFlix Culture Memo Periodically + Apply @ Work",
+      "target": {
+        "frequency": 2,
+        "period": "monthly",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Prepare Clothes the Day Before",
+      "target": {
+        "frequency": 3,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.75,
+          "time": "hours"
+        }
+      }
+    }]
+    }, {
+    "id": "Label_1159116041258006276",
+    "name": "Fulfillment/Interviewing + Applications",
+    "goals": [{
+     "goal_name": "Look for D3/Visualization Jobs",
+      "target": {
+        "frequency": 1,
+        "period": "monthly",
+        "estimate": {
+          "duration": 2.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Post Jobs on Huntr Board",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Review Job Descriptions",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Resume Development",
+      "target": {
+        "frequency": 1,
+        "period": "quarterly",
+        "estimate": {
+          "duration": 5,
+          "time": "hours"
+        }
+      }
+    }]
+  }]
+}
+
