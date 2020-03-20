@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import classnames from 'classnames';
 import ListHeader from './ListHeader';
 import Cards from './Cards';
@@ -39,5 +40,9 @@ class List extends Component {
     )
   }
 }
+
+const mapStateToProps = (state, ownProps) => {
+  return { cards: state.listsById[ownProps.list._id].cards }
+};
 
 export default List;

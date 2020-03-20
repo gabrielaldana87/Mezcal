@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Modal from 'react-modal';
-import CardOptions from './CardOptions';
-import './CardModal.scss';
+import { getNoteText } from '../../actions/note';
+import TaskOptions from './TaskOptions';
+import './TaskModal.scss';
 
-class CardModal extends Component {
+class TaskModal extends Component {
   static propTypes = {
     card: PropTypes.shape({
       text: PropTypes.string.isRequired,
@@ -21,14 +23,18 @@ class CardModal extends Component {
     super(props);
     this.state = {
       isNotePadEditOpen: false,
-      isCalendarIconOpen: false
+      isCalendarIconOpen: false,
+      noteText:''
     };
     if (typeof document !== "undefined") {
       Modal.setAppElement("#root");
     }
   }
   toggleNotePadPicker = () => {
-    this.setState({ isNotePadEditOpen: !this.state.isNotePadEditOpen })
+    const { dispatch, cardElement, noteText } = this.props;
+    this.setState({ isNotePadEditOpen: !this.state.isNotePadEditOpen });
+    dispatch(getNoteText(cardElement.id));
+    this.setState({ noteText: noteText });
   }
   ;
   handleRequestClose = () => {
@@ -41,7 +47,7 @@ class CardModal extends Component {
   ;
   render () {
     const { isNotePadEditOpen, isCalendarIconOpen } =  this.state;
-    const { cardElement, card, background, color, listId, isOpen } = this.props;
+    const { cardElement, card, background, color, listId, isOpen, task, noteText } = this.props;
     if (!cardElement) {
       return null;
     }
@@ -93,9 +99,12 @@ class CardModal extends Component {
       includeDefaultStyles={ false }
       onClick={ this.handleRequestClose }
       >
-        <CardOptions
+        <TaskOptions
           isNotePadEditOpen={ isNotePadEditOpen }
           card={ card }
+          listId={ listId }
+          noteText={ noteText }
+          task={ cardElement }
           color={ color }
           background={ background }
           boundingRect={ boundingRect }
@@ -110,4 +119,11 @@ class CardModal extends Component {
 
 }
 
-export default CardModal;
+const mapStateToProps = (state, prevProps) => {
+  return {
+    ...prevProps,
+    noteText: state.note.data.noteText
+  }
+};
+
+export default connect(mapStateToProps)(TaskModal);

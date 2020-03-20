@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 
@@ -13,14 +14,18 @@ class Cards extends Component {
     return (
       <>
         <div className='cards'>
-          {cards.map((cardId, index) => (
-            <Card
-              key={cardId._id}
-              cardId={cardId}
-              index={index}
-              listId={listId}
-            />
-          ))}
+          {cards.map((cardId, index) => {
+
+                console.log(`${ cardId._id }-${ listId }`)
+               return <Card
+                  key={ `${ cardId._id }-${ listId }` }
+                  card={ cardId }
+                  index={ index }
+                  listId={ listId }
+                />
+
+            }
+          )}
           <div
             style={{float: 'left', clear: 'both'}}
           ></div>
@@ -31,7 +36,8 @@ class Cards extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return {cards: state.cards}
 };
 
-export default Cards;
+export default connect()(Cards);

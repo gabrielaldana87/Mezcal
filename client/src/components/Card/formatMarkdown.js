@@ -20,15 +20,8 @@ const formatMarkdown = markdown => {
       return newString;
     });
   return html
-    .replace(/<p/g, match => {
-      let newString;
-      console.log(html.match(/{(.*)}/).pop());
-      return `<p id=${html.match(/{(.*)}/).pop()}`
-    });
-    // .replace(/{/, `<span class='invisible'>`)
-    // .replace(/\}/, `</span>`)
-    //.replace(/<p/g, `<p id=${html.match(/{(.*)}/).pop()}`)
-    //.replace(/{(.*)}/, '')
+    .replaceAll(html, /<p/g, `<p id=${html.match(/{(.*)}/).pop()}`)
+    .replaceAll(html, /{(.*)}/, '')
     //;
 };
 

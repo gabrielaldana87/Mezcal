@@ -1,0 +1,81 @@
+@import "../../styles/settings/variables";
+
+
+
+header {
+  background: #eeeeee;
+  padding: 10px;
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.card-view {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 0px 5px 0px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  width: 50%;
+  border: 1px solid #ebebeb;
+  border-radius: $list-radius;
+  position: relative;
+  -moz-transition: all 1s,ease-out;
+  -o-transition: all 1s,ease-out;
+  -webkit-transition: all 1s,ease-out;
+  transition: all 1s,ease-out;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+.box-text {
+  width: 40%;
+  float: left;
+  margin: 0px 10px 0px 15px;
+  padding: 3px 3px 1px 10px;
+  font-weight: 600;
+  //font-size: 12px;
+
+  &.time {
+    width: 30%;
+    border-radius: $list-radius;
+  }
+
+  &.task-name {
+    font-size: .75rem;
+  }
+
+  &.status {
+    width: 21%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: $list-radius;
+  }
+
+}
+
+.task-info {
+  display: flex;
+  //font-size: 12px;
+}
+
+.task-control {
+  padding: 10px 2px 2px 2px;
+}
+
+.note-text-box {
+  margin: 10px;
+  padding: 10px;
+  border-radius: $list-radius;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-content {
+  position: relative;
+  box-sizing: border-box;
+  margin: 8px 5px 0 5px;
+  border-radius: 3px;
+  color: #222;
+  background: #fbfbfb;
+  font-size: 11px;
+  transition: box-shadow 0.15s;
+}

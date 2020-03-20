@@ -1,24 +1,12 @@
 import React, { Component } from 'react';
 import './Header.scss';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: {}
-    }
-    ;
-  }
-  ;
-  componentDidMount () {
-    fetch('/api/user')
-      .then(res => res.json())
-      .then(user => this.setState(mapStateToProps({user})) )
-  }
-  ;
+
   render = () => {
-    const { user } = this.state;
+    const { displayName , imageUrl } = this.props;
     return (
       <div className='header navbar'>
         <div className='header-container'>
@@ -26,10 +14,10 @@ class Header extends Component {
             <li className='dropdown'>
               <a href='' className='dropdown-toggle no-after peers fxw-nw ai-c lh-1' dataToggle='dropdown'>
                 <div className='peer mR-10'>
-                  <img className='w-2r bdrs-50p' src={user.imageUrl} alt=''/>
+                  <img className='w-2r bdrs-50p' src={ imageUrl } alt=''/>
                 </div>
-                <div className='peer'>
-                  <span className='fsz-sm c-grey-900'>{user.displayName}</span>
+                <div className='peer display-name'>
+                  <span className='fsz-sm c-grey-900'>{ displayName }</span>
                 </div>
               </a>
             </li>
@@ -40,6 +28,6 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = ({user}) => ({user});
+const mapStateToProps = ({ user }) => ({ user });
 
-export default Header;
+export default connect(mapStateToProps)(Header);

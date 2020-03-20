@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import List from '../List/List';
@@ -12,14 +13,8 @@ class Board extends Component {
     }
   }
   ;
-  componentDidMount () {
-    fetch('/api/boards')
-      .then(res => res.json() )
-      .then(boards => this.setState(mapStateToProps( boards )) );
-  }
-  ;
   render = () => {
-    const  { lists, boardTitle, boardId, boardColor } = this.state;
+    const  { lists, boardTitle, boardId, boardColor } = this.props;
     return (
       <>
         <div className={classnames('board', boardColor)}>
@@ -45,13 +40,13 @@ class Board extends Component {
 }
 
 const mapStateToProps = state => {
-  const  board  = state;
+  const  { board } = state;
   return {
-    lists: board.lists,
-    boardTitle: board.title,
-    boardColor: board.color,
-    boardId: board._id
+    lists: board.data.lists,
+    boardTitle: board.data.title,
+    boardColor: board.data.color,
+    boardId: board.data._id
   }
 };
 
-export default Board;
+export default connect(mapStateToProps)(Board);

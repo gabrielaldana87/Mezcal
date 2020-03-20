@@ -1,9 +1,11 @@
 import React, { Component, ReactDOM } from 'react';
 import PropTypes from 'prop-types';
+import  { connect } from 'react-redux';
+import Task from '../Task/Task';
 import Status from '../Status/Status';
-import CardModal from '../CardModal/CardModal';
+import TaskModal from '../TaskModal/TaskModal';
 import classnames from 'classnames';
-import formatMarkdown from './formatMarkdown';
+// import formatMarkdown from './formatMarkdown';
 import './Card.scss';
 import * as _ from 'underscore';
 
@@ -21,7 +23,7 @@ class Card extends Component {
   componentDidMount () {
     fetch('/api/categories')
       .then(res => res.json())
-      .then(squares => { this.setState(squaresToCard(squares)) })
+      .then(squares => { this.setState( { squares } )});
   }
   ;
   toggleCardEditor = () => {
@@ -31,16 +33,14 @@ class Card extends Component {
   handleClick (event) {
     const { tagName } = event.target;
     if (tagName.toLowerCase() === 'p') {
-      console.log(event.target)
       this.paragraph = event.target;
       this.toggleCardEditor(event);
     }
   }
   ;
   render () {
-    const { card, index, listId , key } = mapStateToProps(this.props);
-    const { isModalOpen } = this.state;
-    const squares = this.state.squares;
+    const { card, index, listId, cardId } = this.props;
+    const { isModalOpen , squares } = this.state;
     const schedule = _.find(squares, o => o.id === card._id );
     return (
       <>
@@ -61,34 +61,40 @@ class Card extends Component {
             ref={ ref => {
               this.ref = ref;
             }}
-            dangerouslySetInnerHTML={{
-              __html: formatMarkdown(`${card.text}`)
-            }}
-          />
+          >
+            <h3> { card.name } </h3>
+            { card.tasks.map(task =>
+              <>
+                <Task { ...task } key={ task.id }/>
+                <TaskModal
+                  isOpen={isModalOpen}
+                  cardElement={this.paragraph}
+                  color={card.color}
+                  background={card.background}
+                  card={card}
+                  note={ task.note }
+                  listId={listId}
+                  toggleCardEditor={this.toggleCardEditor}
+                />
+              </>
+            ) }
+          </div>
           { schedule ? <Status
             status={ schedule.completion.sort() }
             listId={ listId }
             background = { card.color }
           /> : null }
         </div>
-        <CardModal
-          isOpen={isModalOpen}
-          cardElement={this.paragraph}
-          color={card.color}
-          background={card.background}
-          card={card}
-          listId={listId}
-          toggleCardEditor={this.toggleCardEditor}
-        />
+
       </>
     )
   }
 }
 
-const mapStateToProps = state => ({
-  listId: state.listId,
-  card: state.cardId
-});
+const mapStateToProps = (state, ownProps) => {
+  // card: state.cardsById[ownProps.cardId]
+  return { card: ownProps.card } ;
+};
 
 const squaresToCard = state => {
   const squares = state;
@@ -97,4 +103,5 @@ const squaresToCard = state => {
   }
 };
 
-export default Card;
+
+export default connect()(Card);

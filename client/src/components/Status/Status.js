@@ -32,9 +32,10 @@ class Status extends Component {
     const { squares, color, hours } = mapStateToProps(this.props);
     return (
       <div className='btn-toolbar' role='toolbar' aria-label='Toolbar with button groups'>
-        {squares.map( obj  => {
+        {squares.map( (obj,i)  => {
           let className = `btn btn-secondary ${obj.key}`;
           return <Square
+            key={ `${obj.key}-${obj.snippet.substr(0,6)}-${i}` }
             className = { className }
             id = { obj.key }
             color= { color }

@@ -1,10 +1,11 @@
 import React,  { Component } from 'react';
 import PropTypes from 'prop-types';
-import Note from '../Note/Note';
+import { connect } from 'react-redux';
+import Note from '../Notes/Note';
 import Dropdown from '../Dropdown/Dropdown';
-import './CardOptions.scss';
+import './TaskOptions.scss';
 
-class CardOptions extends Component {
+class TaskOptions extends Component {
   static propTypes = {
     isNotePadEditOpen: PropTypes.bool.isRequired,
     card: PropTypes.shape({ _id: PropTypes.string.isRequired }).isRequired,
@@ -34,6 +35,9 @@ class CardOptions extends Component {
       isCalendarIconOpen,
       toggleNotePadPicker,
       card,
+      task,
+      listId,
+      noteText,
       color,
       background,
       isThinDisplay,
@@ -77,7 +81,10 @@ class CardOptions extends Component {
               boundingRect={ boundingRect }
               background={ background }
               color={ color }
+              noteText={ noteText }
               card={ card }
+              task={ task }
+              listId={ listId }
               />
           </div>
         )
@@ -88,4 +95,4 @@ class CardOptions extends Component {
   }
 }
 
-export default CardOptions;
+export default connect()(TaskOptions);
