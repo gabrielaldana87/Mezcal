@@ -1,10 +1,17 @@
-const cardsById = (state = {}, action) => {
-  switch (action.type) {
-    case 'ADD_NOTE': {
-      const { noteText, cardId } = action.payload;
-      return { ...state, [cardId] : { note: noteText, _id: cardId }};
-    }
-  default:
+const cardsById = ( state = [], action ) => {
+  switch ( action.type ) {
+  case 'ADD_NOTE' :
+    const { cardId , taskName , statusId, noteText , taskId } = action.payload;
+    return {
+      ...state,
+      [cardId] : {
+        taskName,
+        statusId,
+        noteText,
+        taskId
+      }
+    };
+  default :
     return state;
   }
 };
