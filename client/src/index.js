@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter } from 'react-router-dom';
 import rootReducer from './reducers';
+import thunk from 'redux-thunk';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles/index.scss';
 import 'react-id-swiper/lib/styles/scss/swiper.scss';
@@ -17,7 +18,7 @@ const preloadedState = window.PRELOADED_STATE;
 delete window.PRELOADED_STATE;
 
 const store = createStore(rootReducer, preloadedState,
-  composeWithDevTools(applyMiddleware(persistMiddleware))
+  composeWithDevTools(applyMiddleware(thunk))
 );
 
 ReactDOM.hydrate(
