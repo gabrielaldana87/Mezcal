@@ -53,7 +53,6 @@ const note = ( state = initialState, action ) => {
     }
     ;
   case 'GET_NOTE_SUCCESS':
-    console.log(noteText, action.payload)
     return {
       ...state,
       loading: false,
@@ -61,6 +60,31 @@ const note = ( state = initialState, action ) => {
     }
     ;
   case 'GET_NOTE_FAILURE':
+    return {
+      ...state,
+      loading: false,
+      error: action.payload.error,
+      data: {
+        noteText: ''
+      }
+    }
+    ;
+  case 'MODIFY_NOTE_TASK_BEGIN':
+    return {
+      ...state,
+      loading: true,
+      error: null
+    }
+    ;
+  case 'MODIFY_NOTE_TASK_SUCCESS':
+    console.log(action.payload);
+    return {
+      ...state,
+      loading: false,
+      data: noteText
+    }
+    ;
+  case 'MODIFY_NOTE_TASK_FAILURE':
     return {
       ...state,
       loading: false,
