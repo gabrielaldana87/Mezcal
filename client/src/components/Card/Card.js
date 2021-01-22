@@ -5,6 +5,7 @@ import Task from '../Task/Task';
 import Status from '../Status/Status';
 import TaskModal from '../TaskModal/TaskModal';
 import classnames from 'classnames';
+import { fetchGoalSelection } from '../../actions/goals';
 // import formatMarkdown from './formatMarkdown';
 import './Card.scss';
 import * as _ from 'underscore';
@@ -20,27 +21,23 @@ class Card extends Component {
     ;
   }
   ;
-  componentDidMount () {
-    fetch('/api/categories')
-      .then(res => res.json())
-      .then(squares => { this.setState( { squares } )});
-  }
-  ;
   toggleCardEditor = () => {
     this.setState({isModalOpen: !this.state.isModalOpen });
   }
   ;
-  handleClick (event) {
+  handleClick  = event => {
+    const { dispatch } = this.props;
     const { tagName } = event.target;
     if (tagName.toLowerCase() === 'p') {
       this.paragraph = event.target;
       this.toggleCardEditor(event);
+      dispatch(fetchGoalSelection(event.target.id));
     }
   }
   ;
   render () {
-    const { card, index, listId, cardId } = this.props;
-    const { isModalOpen , squares } = this.state;
+    const { card, listId, squares } = this.props;
+    const { isModalOpen } = this.state;
     const schedule = _.find(squares, o => o.id === card._id );
     return (
       <>
@@ -92,16 +89,13 @@ class Card extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  // card: state.cardsById[ownProps.cardId]
-  return { card: ownProps.card } ;
-};
-
-const squaresToCard = state => {
-  const squares = state;
   return {
-    squares: squares
+    card: ownProps.card,
+    listId: ownProps.listId,
+    squares: state.status.data
   }
+
 };
 
 
-export default connect()(Card);
+export default connect(mapStateToProps)(Card);

@@ -9,7 +9,7 @@ import './TaskModal.scss';
 class TaskModal extends Component {
   static propTypes = {
     card: PropTypes.shape({
-      text: PropTypes.string.isRequired,
+      text: PropTypes.string,
       _id: PropTypes.string.isRequired,
     }).isRequired,
     cardElement: PropTypes.shape({

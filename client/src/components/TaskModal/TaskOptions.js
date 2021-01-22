@@ -68,6 +68,8 @@ class TaskOptions extends Component {
         </button>
         <Dropdown
           label_id={ card._id }
+          card={ card }
+          taskId={ task.id }
         />
         {isNotePadEditOpen && (
           <div

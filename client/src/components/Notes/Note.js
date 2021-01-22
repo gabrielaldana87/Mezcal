@@ -37,7 +37,7 @@ class Note extends Component {
     const { dispatch, userId, categoryId, msgId, taskName, time, statusId, statusName } = this.props;
     if ( noteText === '' ) return;
     dispatch(writeNote({ userId, categoryId, msgId, taskName, time, statusId, statusName, noteText }));
-   this.setState({isOpen : false});
+    this.setState({isOpen : false});
   }
   ;
   revertNoteText = () => {
@@ -64,7 +64,6 @@ class Note extends Component {
       card
     } = this.props
     ;
-    const textBlock = noteText === '' ? '' : noteText;
     return (
       <div className='bgc-white p-20 bd' style={{ backgroundColor:background }}>
         <h6 className='c-grey-900'></h6>

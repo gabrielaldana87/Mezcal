@@ -39,6 +39,13 @@ path:hover{
 .line-Air { stroke: steelblue;}
 .line-SI {stroke: grey;}
 
+.tag-1  {fill: #EE352E;}
+.tag-2  {fill: #EE352E;}
+.tag-6  {fill: #00933C;}
+.tag-7  {fill: purple;}
+.tag-R  {fill: #FCCC0A;}
+.tag-L  {fill: #A7A9AC;}
+
 svg{
   background-color:white;
 }
@@ -100,5 +107,19 @@ text.label{
 
 .neigh-text{
   //transform: rotate(-45deg);
+}
+
+.subway-label {
+  fill: white;
+  font-size:30px;
+  font-family: 'Helvetica Neue';
+  font-weight:600;
+}
+
+.subway-name {
+  display: inherit;
+}
+.subway-name circle {
+  cursor: pointer;
 }
 

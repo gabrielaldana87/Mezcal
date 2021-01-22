@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import G from './Elements/G';
 import AxisX from './Elements/AxisX';
 import AxisY from './Elements/AxisY';
+import Button from './Elements/Button';
 import './Subway.scss';
 import * as d3 from 'd3';
 import { feature } from 'topojson';
@@ -15,7 +16,7 @@ class Subway extends Component {
     super(props);
     this.state = {
       duration: 200000,
-      subway: '1'
+      subway: null
     }
   }
   ;
@@ -26,8 +27,8 @@ class Subway extends Component {
       height = svg.attr('height')
     ;
     return d3.geoMercator()
-      .center([-73.9967, 40.7072])
-      .scale(160000)
+      .center([-74.0177, 40.7352])
+      .scale(185000)
       .translate([(width) / 2, (height)/2]);
   }
   ;
@@ -48,27 +49,51 @@ class Subway extends Component {
       .attr('class', 'point')
       // .attr("transform", function(d,i)  { console.log(d[i]); return "translate(" + projection([-73.9667, 40.7172]) +")"})
       .style('fill', 'crimson')
-      .style('opacity', .5);
+      .style('opacity',0)
   }
   ;
-  transition() {
+  transition = track => {
     let
-      duration = this.state.duration,
-      track = this.state.subway,
+      svg = d3.select('.subway'),
+      { duration, stationData } = this.state,
+      // track = this.state.subway,
       routePath = d3.selectAll(`.phantom-${track}`),
       translateAlong = this.translateAlong,
       projection = this.projection(),
       tick = d => this.tick(d),
       filter = _.filter( this.state.stations, o => o.properties.line.includes(track) )
-      ;
-    d3.selectAll('.point')
+    ;
+    this.setState({subway: track })
+    ;
+    d3.select(`#circle-${ track }`)
+      .style('opacity', 1)
       .transition()
       .delay(500)
       .ease(d3.easeLinear)
       .duration(duration)
       .attrTween('transform', translateAlong(routePath, projection, filter, tick ) )
+    ;
+    d3.select(`#circle-${ track }`)
+      .transition()
+      .delay((duration / 3) + (4 * 1500))
+      .duration(0)
       // .each(() => tick )
       // .each( this.transition );
+    ;
+    d3.selectAll(`.stations`)
+      .filter(d => d.properties.line.includes(track) )
+      .style('opacity',1)
+    ;
+    svg.selectAll('.income')
+      .data(stationData.features)
+      .enter()
+      .append('text')
+      .attr('dx', d => projection(d.geometry.coordinates)[0] + 4 )
+      .attr('dy', (d,i) => projection(d.geometry.coordinates)[1] + 4 )
+      .text(d => d.properties.line.includes(track) ?  d.properties.name :null ) //d.properties.name  : null)
+      .style('fill','black')
+      .style('font-size','8px')
+
   }
   ;
   translateAlong (routePath, projection, filter, tick ) {
@@ -115,7 +140,9 @@ class Subway extends Component {
     array.push(point);
     let
       g = d3.select('.income-graph'),
+      ticker = d3.select('.ticker'),
       now = new Date(),
+      formatMoney = d => `$ ${ d3.format(",")(d) }`,
       line = this.line(point),
       x = this.xScale(),
       y = this.yScale(),
@@ -123,7 +150,8 @@ class Subway extends Component {
       neighborhoods = _.uniq(uniq, o => o.properties.neighborhood ),
       height = g.attr('height') + 5
     ;
-    x.domain([ d3.min(uniq, d => d.properties.ts ),  d3.max(uniq, d => d.properties.ts )])
+    x.domain([d3.min(uniq, d => d.properties.ts ),  d3.max(uniq, d => d.properties.ts )])
+    // y.domain([d3.min(uniq, d => d.properties.dp03_0062e ), d3.max(uniq, d => d.properties.dp03_0062e )])
     ;
     const path = d3.select('.income-graph .income-line')
       .datum(uniq)
@@ -136,7 +164,8 @@ class Subway extends Component {
     // .transition()
     // .duration(500)
 
-    d3.select('.axis.axis--x').call(d3.axisBottom(x).ticks(3))
+    d3.select('.axis.axis--x').call(d3.axisBottom(x).ticks(0))
+    // d3.select('.axis-axis--y').call(d3.axisLeft(y))
     ;
     const circle = g.selectAll('circle').data(uniq)
     ;
@@ -181,6 +210,30 @@ class Subway extends Component {
       .text(d => d.properties.neighborhood)
       .attr('y', d => y(d.properties.dp03_0062e))
       // .attr('transform', d => 'rotate(-90)')
+
+    const
+      reader = ticker.selectAll('.name-text').data([point]),
+      dp03_0062e = ticker.selectAll('.dp03_0062e-text').data([point])
+    ;
+    reader.exit().remove();
+    dp03_0062e.exit().remove()
+    ;
+    reader.enter().append('text').attr('class','name-text');
+    dp03_0062e.enter().append('text').attr('class','dp03_0062e-text')
+    ;
+    reader
+      .attr('y', 150)
+      .text(d => `${ d.properties.name }` )
+      .style('font-size', '30px')
+      .style('font-family','Avenir Next')
+      .style('text-align', 'right')
+      .attr('x', (d,i,t) => 636 - d3.select(t[i]).node().getComputedTextLength() )
+    ;
+    dp03_0062e
+      .attr('y', 200)
+      .text(d => formatMoney(d.properties.dp03_0062e) )
+      .style('font-size', '25px')
+      .attr('x', (d,i,t) => 636 - d3.select(t[i]).node().getComputedTextLength() )
   }
   ;
   setDomain (var_name) {
@@ -254,37 +307,28 @@ class Subway extends Component {
       .attr('d', path )
       .attr('class','borough_map')
     ;
-   // console.log(stations);
-
-    // d3.select('.zcta_overlay').selectAll('path.zcta_overlay')
-    //   .data(zcta.features)
-    //   .enter()
-    //   .append('path')
-    //   .attr('d', path )
-    //   .attr('class', 'census_tracts')
-    //   .attr('stroke-width', '.05px')
-    //   .attr('stroke', 'black')
-
-
+    this.setState({ stationData : stations })
+    ;
+    d3.select('.zcta_overlay').selectAll('path.zcta_overlay')
+      .data(zcta.features)
+      .enter()
+      .append('path')
+      .attr('d', path )
+      .attr('class', 'census_tracts')
+      .attr('stroke-width', '.05px')
+      .attr('stroke', 'black')
+    ;
     svg.selectAll('.stations')
       .data(stations.features)
       .enter()
       .append('circle')
       .attr('r', 3 )
+      .attr('class', d => 'stations' )
       .attr('cx', d => projection(d.geometry.coordinates)[0] )
       .attr('cy', d => projection(d.geometry.coordinates)[1] )
       .attr('fill', 'rgba(255,255,255,0)')
+      .style('opacity',0)
       .attr('stroke', 'grey')
-    ;
-    svg.selectAll('.income')
-      .data(stations.features)
-      .enter()
-      .append('text')
-      .attr('dx', d => { return projection(d.geometry.coordinates)[0] + 4 })
-      .attr('dy', d => { return projection(d.geometry.coordinates)[1] + 4 })
-      .text(d =>  d.properties.line.includes(track) ?  d.properties.name :null) //d.properties.name  : null)
-      .style('fill','black')
-      .style('font-size','8px')
     ;
 
     // var output = [];
@@ -366,8 +410,6 @@ class Subway extends Component {
 
     this.setXAxis();
 
-    this.transition();
-
   }
   ;
   componentDidMount () {
@@ -384,9 +426,9 @@ class Subway extends Component {
   ;
   render () {
     const
-      style = {width: 1400, height: 1500},
-      width = style.width / 3.25,
-      height = style.height / 2.20,
+      style = {width: 1750, height: 1500},
+      width = style.width / 2.75,
+      height = style.height / 2.25,
       margin = {top: 90, right: 50, bottom: 20, left: 90},
       transform = `translate(${ margin.left },${ margin.top })`,
       positionX = `translate(0,${height})`,
@@ -394,6 +436,15 @@ class Subway extends Component {
     ;
     return (
       <svg className='subway' {...style} >
+        <Button
+          circleClass={ d => `tag-${d}`}
+          onClick={ d => this.transition(d) }
+          className='subway-name'
+          data={ ['1','2','6','7','L','R'] }
+          radius={ 22 }
+          cx={ 150 }
+          cy={ 50 }
+        />
         <g className='feature-group'>
         </g>
         <g className='phantom-group'>
@@ -422,6 +473,12 @@ class Subway extends Component {
             transformText={ transformLabel }
           />
         </G>
+        <G
+          className='ticker'
+          width={ width }
+          height={ height / 3}
+          transform={ `translate(${ 90 },${ height })` }
+        />
       </svg>
     )
   }

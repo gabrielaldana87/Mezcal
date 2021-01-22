@@ -1,5 +1,7 @@
 import React , { Component } from 'react';
 import Select from 'react-select';
+import { connect } from 'react-redux';
+import { fetchGoal } from '../../actions/goals';
 import './Dropdown.scss';
 
 class Dropdown extends Component {
@@ -12,12 +14,20 @@ class Dropdown extends Component {
   }
   ;
   handleChange = selectedOption => {
-    console.log(selectedOption)
+    const { taskId , card, dispatch }  = this.props;
+    let message = {
+      categoryId: card._id,
+      categoryName: card.name,
+      selectedOption : selectedOption.value,
+      ...card.tasks.find(o => o.id === taskId)
+    };
+    dispatch(fetchGoal(message));
+    this.setState({ selectedOption : selectedOption });
   }
   ;
   componentDidMount () {
     const { label_id } = this.props;
-    fetch(`/api/goals/${ label_id }`)
+    fetch(`/api/goals_class/${ label_id }`)
       .then( res => res.json())
       .then( category => this.setState({ options: category[0].goals.map(o => {
         return { value: o.goal_name , label: o.goal_name }
@@ -25,11 +35,12 @@ class Dropdown extends Component {
   }
   ;
   render () {
-    const { options , selectedOption } = this.state;
+    const { options, selectedOption } = this.state;
+    let goal = selectedOption ? selectedOption : this.props.selectedOption;
     return (
       <div className='selection-goals-options'>
         <Select
-          value={ selectedOption }
+          value={ goal }
           options= { options }
           onChange= { this.handleChange }
         />
@@ -38,4 +49,8 @@ class Dropdown extends Component {
   }
 }
 
-export default Dropdown;
+const mapStateToProps = state => {
+  return { selectedOption: state.goal.data }
+};
+
+export default connect(mapStateToProps)(Dropdown);

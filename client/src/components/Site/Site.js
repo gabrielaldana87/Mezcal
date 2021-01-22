@@ -11,12 +11,15 @@ import Subway from '../Chart/Subway';
 import Census from '../Projects/Census/Census';
 import Goals from '../Goals/Goals';
 import { fetchBoard } from '../../actions/board';
+import { fetchStatus } from '../../actions/status';
 
 class Site extends Component {
 
   componentDidMount () {
+    const { dispatch } = this.props;
 
-    this.props.dispatch(fetchBoard());
+    dispatch(fetchBoard());
+    dispatch(fetchStatus());
 
   }
   ;

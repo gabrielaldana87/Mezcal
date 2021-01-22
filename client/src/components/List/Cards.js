@@ -15,15 +15,12 @@ class Cards extends Component {
       <>
         <div className='cards'>
           {cards.map((cardId, index) => {
-
-                console.log(`${ cardId._id }-${ listId }`)
-               return <Card
-                  key={ `${ cardId._id }-${ listId }` }
-                  card={ cardId }
-                  index={ index }
-                  listId={ listId }
-                />
-
+           return <Card
+            key={ `${ cardId._id }-${ listId }` }
+            card={ cardId }
+            index={ index }
+            listId={ listId }
+              />
             }
           )}
           <div

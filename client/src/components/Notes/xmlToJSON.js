@@ -1,5 +1,5 @@
 
-const test = xml => {
+const xmlToJson = xml => {
   var regex = /(<\w+[^<]*?)\s+([\w-]+)="([^"]+)">/;
   xml = xml
     .replace(regex, '<$2>$3</$2>$1>')
@@ -9,4 +9,4 @@ const test = xml => {
   return xml
 };
 
-export default test;
+export default xmlToJson;

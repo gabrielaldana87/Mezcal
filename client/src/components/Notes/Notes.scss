@@ -58,8 +58,17 @@ header {
   //font-size: 12px;
 }
 
+.task-text {
+  width: 90%;
+  margin-bottom: 2px;
+}
 .task-control {
   padding: 10px 2px 2px 2px;
+}
+
+.btn.btn-primary {
+  margin: 0 0 5px 5px;
+  font-size: .6rem;
 }
 
 .note-text-box {
