@@ -5,7 +5,7 @@ const fs = require('fs');
 const {google} = require('googleapis');
 const Q = require('q');
 const callGoogle = require('./google');
-const extractMessages = require('../lib/extractMessages');
+//const extractMessages = require('../lib/extractMessages');
 
 
 const configurePassport = (db, cb) => {
@@ -22,13 +22,15 @@ const configurePassport = (db, cb) => {
   //   });
   // });
 
-  users.findOne({ _id: '118055149103319104270' }).then(user => {
-    if (user) {
+  users
+    .findOne({ _id: '118055149103319104270' })
+    .then(user => {
+      if (user) {
       // callGoogle(() => extractMessages(oAuth2Client, db, user._id));
       cb(null, user);
-    } else {
-      throw 'user not found';
-    }
+      } else {
+        throw 'user not found';
+      }
   });
 };
 
