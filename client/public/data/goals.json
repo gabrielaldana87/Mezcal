@@ -1,0 +1,343 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "Master JavaScript + Web Development",
+      "list": [
+        {
+          "id": 1,
+          "label": "JavaScript",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"Go over the Course 'JavaScript Essential Training'",
+            "link": "https://www.linkedin.com/learning/javascript-essential-training-3/welcome"
+          },{
+            "label":"Go over the difference between let, const and var"
+          },{
+            "label":"Define closure + scope"
+          },{
+            "label":"Define an asynchronous function"
+          },{
+            "label":"What is prototype inheritance"
+          },{
+            "label":"How does method binding work?"
+          }, {
+            "label":"Go over JS questions for the cleerly interview"
+          }, {
+            "label":"What is a higher order function?"
+          }, {
+            "label":"What is strict mode?"
+          }, {
+            "label":"What happens if you only use console.log not console.log()"
+          }, {
+            "label":"What is the valueOf method?"
+          }, {
+            "label":"What is threading in JavaScript?"
+          },{
+            "label": "What is Map()?"
+          },
+            {
+              "label": "Go over difference between setTimeout and setInterval"
+            }
+          ]
+        },         {
+          "id": 1,
+          "label": "React",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"Go over the Course 'React.js Essential Training'",
+            "link":"https://www.linkedin.com/learning/react-js-essential-training-3/create-robust-user-interfaces-with-react-js"
+          }]
+        },{
+          "id": 2,
+          "label": "HTML/CSS",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"What is the difference between Absolute and Relative in positioning"
+          },{
+            "label":"What does float do?"
+          },{
+            "label":"Why are tables not good to use in HTML page layout"
+          },{
+            "label":"Child Element Selectors and Other CSS Selectors"
+          },{
+            "label":"What is the > in a css selector?"
+          },{
+            "label":"Review CSS Preprocessors"
+          }]
+        }, {
+          "id": 2,
+          "label": "ECMA6 + ECMA7",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"Go over the Course 'Learning ECMAScript 6' in LinkedIn Learning",
+            "link": "https://www.linkedin.com/learning/learning-ecmascript-6/welcome"
+          },{
+            "label":"Go over what are the features of ECMAScript in detail"
+          },{
+            "label":"How can I implement the new features of ECMAScript into my code in a way I didn’t know before?"
+          }]
+        },         {
+          "id": 1,
+          "label": "Medium Articles",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95"
+          },{
+            "label":"https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3"
+          },{
+            "label":"https://medium.com/javascript-scene/why-hiring-is-so-hard-in-tech-c462c3230017"
+          }, {
+            "label":"https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4"
+          },{
+            "label":"https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9"
+          },{
+            "label":"https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1"
+          }
+          ]
+        },{
+          "id": 2,
+          "label": "Session Storage + Caching",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"Go over Session Storage + Caching"
+          },{
+            "label":"Which of the following Headers can potentially allow a resource to be loaded from cache?"
+          }]
+        }, {
+          "id": 2,
+          "label": "Security",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"What are some security issues in WebDev"
+          },{
+            "label":"SQL injection"
+          },{
+            "label":"Cross-site Scripting"
+          }]
+        }, {
+          "id": 2,
+          "label": "REST + APIs",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":"Go Over REST Methods"}]
+        }, {
+          "id": 2,
+          "label": "Regex",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": "Design Patterns",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{
+            "label":"Research Best Design Patterns"
+          }]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Extend Ocelot",
+      "list": [
+        {
+          "id": 1,
+          "label": "Maintenance",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":"Ocelot is down. Bring back up by contacting Eclypsis team for SP Authentication."},
+            {"label":""}]
+        },
+        {
+          "id": 2,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PortFolio Projects",
+      "list": [
+        {
+          "id": 1,
+          "label": "Google API",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }, {
+          "id": 2,
+          "label": "Subway",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }, {
+          "id": 2,
+          "label": "Census API",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Algorithms + Data Structures",
+      "list": [
+        {
+          "id": 1,
+          "label": "Algorithms Book",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": "How to Crack the Coding Interview",
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Resume Development",
+      "list": [
+        {
+          "id": 1,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Video Projects",
+      "list": [
+        {
+          "id": 1,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Interview Prep",
+      "list": [
+        {
+          "id": 1,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "GitHub Promotion",
+      "list": [
+        {
+          "id": 1,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    },{
+      "id": 9,
+      "name": "Apply for Jobs",
+      "list": [
+        {
+          "id": 1,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        },
+        {
+          "id": 2,
+          "label": 2,
+          "isDone": 3,
+          "onClick": 4,
+          "onClickDelete": 5,
+          "tasks": [{"label":""},{"label":""}]
+        }
+      ]
+    }
+  ],
+  "name": "hay qwann"
+}
