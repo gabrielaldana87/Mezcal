@@ -21,6 +21,7 @@ MongoClient.connect(`${process.env.MONGODB_URL}/${process.env.MONGODB_NAME}`,
   app.use(express.static(path.join(__dirname, '../client/public')));
   app.use(passport.initialize());
   app.use(passport.session());
+  app.use('/', api(db) );
   app.use('/auth', auth );
   app.use('/api', api(db) );
   app.use('/census', census() )
