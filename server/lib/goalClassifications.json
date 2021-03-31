@@ -132,6 +132,36 @@
           "time": "hours"
         }
       }
+    },{
+      "goal_name": "Develop LeaderShip Skills",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Read Medium Article",
+      "target": {
+        "frequency": 4,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Apply to Jobs",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 1,
+          "time": "hours"
+        }
+      }
     }]
     }, {
     "id": "Label_2695632765995747611",
@@ -190,6 +220,16 @@
           "time": "hours"
         }
       }
+    },{
+      "goal_name": "File Taxes",
+      "target": {
+        "frequency": 1,
+        "period": "yearly",
+        "estimate": {
+          "duration": 3,
+          "time": "hours"
+        }
+      }
     }]
     }, {
     "id": "Label_321762675192156868",
@@ -206,6 +246,16 @@
       }
     },{
       "goal_name": "Tricks",
+      "target": {
+        "frequency": 1,
+        "period": "weekly",
+        "estimate": {
+          "duration": 2,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Activity w/ someone",
       "target": {
         "frequency": 1,
         "period": "weekly",
@@ -316,6 +366,16 @@
         "period": "quarter",
         "estimate": {
           "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Take Pills",
+      "target":{
+        "frequency": 1,
+        "period": "day",
+        "estimate": {
+          "duration": 0.25,
           "time": "hours"
         }
       }
@@ -588,6 +648,40 @@
         "period": "quarterly",
         "estimate": {
           "duration": 5,
+          "time": "hours"
+        }
+      }
+    }]
+  },{
+    "id": "Label_7565312202608271395",
+    "name": "Fulfillment/Other",
+    "goals":[{
+      "goal_name": "Commute",
+      "target":{
+        "frequency": 5,
+        "period": "weekly",
+        "estimate":{
+          "duration": 1,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Jazzercize",
+      "target":{
+        "frequency": 3,
+        "period": "weekly",
+        "estimate": {
+          "duration": 0.5,
+          "time": "hours"
+        }
+      }
+    },{
+      "goal_name": "Other",
+      "target":{
+        "frequency": null,
+        "period": "weekly",
+        "estimate": {
+          "duration": null,
           "time": "hours"
         }
       }

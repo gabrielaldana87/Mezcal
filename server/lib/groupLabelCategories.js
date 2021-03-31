@@ -11,8 +11,8 @@ const extractLabelCategories = (auth, completion) => {
     gmail = google.gmail({version: 'v1', auth}),
     array = [],
     now = new Date(),
-    afterDt = timeSunday.floor(now).getTime() / 1000 ,
-    beforeDt = timeSunday.ceil(now).getTime() / 1000
+    afterDt = timeSunday.floor(now).getTime() / 1000, //1586059200,
+    beforeDt = timeSunday.ceil(now).getTime() / 1000 //1586577540
   ;
   getData({
     'api': gmail,
@@ -93,12 +93,11 @@ const extractLabelCategories = (auth, completion) => {
               ;
               return array.map( z => {
                if(z.id === id) {
-                 art.push(
-                   { key: keyFind[0],
-                     snippet: brief,
-                     duration: momentEnd.diff(momentStart, 'hours', true)
-                    }
-                 );
+                 art.push({
+                   key: keyFind[0],
+                   snippet: brief,
+                   duration: momentEnd.diff(momentStart, 'hours', true)
+                 });
                  return z.completion = art;
                }
               });
