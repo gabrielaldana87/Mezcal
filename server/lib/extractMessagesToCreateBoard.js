@@ -27,8 +27,8 @@ const extractMessagesToCreateBoard = (auth, callback) => {
     gmail = google.gmail({version: 'v1', auth}),
     array = [],
     now = new Date(),
-    afterDt = timeSunday.floor(now).getTime() / 1000 ,
-    beforeDt = timeSunday.ceil(now).getTime() / 1000
+    afterDt = timeSunday.floor(now).getTime() / 1000, //1586059200,
+    beforeDt = timeSunday.ceil(now).getTime() / 1000 //1586577540
   ;
    getData({
     'api': gmail,
@@ -116,19 +116,31 @@ const extractMessagesToCreateBoard = (auth, callback) => {
                 _id: k,
                 color: color['textColor'],
                 background: color['backgroundColor'],
-                text: [`### ${name}\n`].concat(v.map(t => {
-                  // i have to pass the id of the message which is t._id
-                  let text = `**${t.card}`;
-                  return text
-                    .replace('more details » ', '')
-                    .replace(' When','**\n'  )
-                    .replace(/Eastern Time.*$/i, '')
-                    .concat(`\n{${t._id}}`)
-                   //  .replace('Resume', 'Something')
-                   //  .replace('WhiteStrips', 'Something')
-                   // .replace('Jawz','Ex')
-                    .replace('gabrielaldana87@gmail.com', '')
-                })).join('\n\t\n')
+                name: name,
+                tasks: v.map(t => {
+
+                  let
+                    header = t.card.match(/(.*) When/).pop(),
+                    id = t._id,
+                    time = t.card.match(/When (.*) Eastern Time/) ?
+                      t.card.match(/When (.*) Eastern Time/).pop() : 'All Day Goal'
+                  ;
+                  return { id, header, time };
+                } )
+                // tasks: [`### ${name}\n`].concat(v.map(t => {
+                //   console.log(t)
+                //   // i have to pass the id of the message which is t._id
+                //   let text = `**${t.card}`;
+                //   return text
+                //     .replace('more details » ', '')
+                //     .replace(' When','**\n'  )
+                //     .replace(/Eastern Time.*$/i, '')
+                //     .concat(`\n{${t._id}}`)
+                //    //  .replace('Resume', 'Something')
+                //    //  .replace('WhiteStrips', 'Something')
+                //    // .replace('Jawz','Ex')
+                //     .replace('gabrielaldana87@gmail.com', '')
+                // })).join('\n\t\n')
               }
             })
             .sortBy(o => o._id)
