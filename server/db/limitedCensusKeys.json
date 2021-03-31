@@ -1,0 +1,38 @@
+[{
+	"id":"DP02_0065PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Graduate or professional degree"
+},{
+	"id":"DP02_0067PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent bachelor's degree or higher"
+},{
+	"id":"DP03_0005PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"EMPLOYMENT STATUS!!Population 16 years and over!!Unemployed!!Civilian labor force"
+},{
+	"id":"DP03_0062E",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"INCOME AND BENEFITS (IN 2013 INFLATION-ADJUSTED DOLLARS)!!Total households!!Median household income (dollars)"
+},{
+	"id":"DP04_0087PE",
+	"concept":"SELECTED HOUSING CHARACTERISTICS",
+	"label":"VALUE!!Owner-occupied units!! Housing value $1,000,000 or more"
+},{
+	"id":"DP04_0088E",
+	"concept":"SELECTED HOUSING CHARACTERISTICS",
+	"label":"VALUE!!Owner-occupied units!!Median housing value (dollars)"
+},{
+	"id": "DP03_0039E",
+	"label": "INDUSTRY!!Civilian employed population 16 years and over!!Information Industry",
+	"concept": "SELECTED ECONOMIC CHARACTERISTICS",
+	"predicateType": "int",
+	"group": "N/A",
+	"limit": 0
+},{
+	"id": "DP02_0122E",
+	"label": "DEMOGRAPHIC!!In county!!Total population",
+	"concept": "SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"group": "N/A",
+	"limit": 0}
+]

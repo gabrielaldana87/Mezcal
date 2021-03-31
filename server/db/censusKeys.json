@@ -1,0 +1,435 @@
+[{
+  "id":"DP02_0059PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Less than 9th grade"},
+{
+  "id":"DP02_0060PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!9th to 12th grade, no diploma"},
+{
+	"id":"DP02_0064PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Bachelor's degree"
+},
+{
+	"id":"DP02_0065PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Graduate or professional degree"},
+{
+	"id":"DP02_0067PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent bachelor's degree or higher"},
+{
+	"id":"DP03_0009PE_2013",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"EMPLOYMENT STATUS!!Civilian labor force!!Percent Unemployed"},
+{
+	"id":"DP03_0059PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"INCOME AND BENEFITS (IN 2013 INFLATION-ADJUSTED DOLLARS)!!Total households!!$100,000 to $149,999"},
+{
+	"id":"DP03_0060PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"INCOME AND BENEFITS (IN 2013 INFLATION-ADJUSTED DOLLARS)!!Total households!!$150,000 to $199,999"},
+{
+	"id":"DP03_0061PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"INCOME AND BENEFITS (IN 2013 INFLATION-ADJUSTED DOLLARS)!!Total households!!$200,000 or more"},
+{
+	"id":"DP03_0062E",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"INCOME AND BENEFITS (IN 2013 INFLATION-ADJUSTED DOLLARS)!!Total households!!Median household income (dollars)"},
+{
+	"id":"DP03_0063E",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"INCOME AND BENEFITS (IN 2013 INFLATION-ADJUSTED DOLLARS)!!Total households!!Mean household income (dollars)"},
+{
+	"id":"DP03_0098PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"HEALTH INSURANCE COVERAGE!!Civilian noninstitutionalized population!!With health insurance coverage!!With public coverage"},
+{
+	"id":"DP03_0099PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"HEALTH INSURANCE COVERAGE!!Civilian noninstitutionalized population!!No health insurance coverage"},
+{
+	"id":"DP03_0108PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"HEALTH INSURANCE COVERAGE!!Civilian noninstitutionalized population 18 to 64 years!!In labor force:!!Employed:!!No health insurance coverage"},
+{
+	"id":"DP03_0110PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"HEALTH INSURANCE COVERAGE!!Civilian noninstitutionalized population 18 to 64 years!!In labor force:!!Unemployed:!!With health insurance coverage"},
+{
+	"id":"DP03_0128PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"PERCENTAGE OF FAMILIES AND PEOPLE WHOSE INCOME IN THE PAST 12 MONTHS IS BELOW THE POVERTY LEVEL!!All people"},
+{
+	"id":"DP03_0133PE",
+	"concept":"SELECTED ECONOMIC CHARACTERISTICS",
+	"label":"PERCENTAGE OF FAMILIES AND PEOPLE WHOSE INCOME IN THE PAST 12 MONTHS IS BELOW THE POVERTY LEVEL!!18 years and over"},
+{
+	"id":"DP04_0086PE",
+	"concept":"SELECTED HOUSING CHARACTERISTICS",
+	"label":"VALUE!!Owner-occupied units!!$500,000 to $999,999"},
+{
+	"id":"DP04_0087PE",
+	"concept":"SELECTED HOUSING CHARACTERISTICS",
+	"label":"VALUE!!Owner-occupied units!!$1,000,000 or more"},
+{
+	"id":"DP04_0088E",
+	"concept":"SELECTED HOUSING CHARACTERISTICS",
+	"label":"VALUE!!Owner-occupied units!!Median (dollars)"},
+{
+	"id":"DP04_0107E",
+	"concept":"SELECTED HOUSING CHARACTERISTICS",
+	"label":"SELECTED MONTHLY OWNER COSTS (SMOC)!!Housing units without a mortgage!!Median (dollars)"},
+{
+	"id":"DP05_0033PE",
+	"concept":"ACS DEMOGRAPHIC AND HOUSING ESTIMATES",
+	"label":"RACE!!One race!!Black or African American"},
+{
+	"id":"DP05_0039PE",
+	"concept":"ACS DEMOGRAPHIC AND HOUSING ESTIMATES",
+	"label":"RACE!!One race!!Asian"},
+{
+	"id":"DP05_0032PE",
+	"concept":"ACS DEMOGRAPHIC AND HOUSING ESTIMATES",
+	"label":"RACE!!One race!!White"},
+{
+	"id":"DP05_0066PE",
+	"concept":"ACS DEMOGRAPHIC AND HOUSING ESTIMATES",
+	"label":"HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)"},
+{
+	"id":"DP02_0134PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"ANCESTRY!!Total population!!Irish"},
+{
+	"id":"DP02_0135PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"ANCESTRY!!Total population!!Italian"},
+{
+	"id":"DP02_0114PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish"},
+{
+	"id":"DP02_0128PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"ANCESTRY!!Total population!!English"},
+{
+	"id":"DP02_0129PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"ANCESTRY!!Total population!!French (except Basque)"},
+{
+	"id":"DP02_0131PE",
+	"concept":"SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"label":"ANCESTRY!!Total population!!German"},
+{
+	"id": "DP03_0039E",
+	"label": "INDUSTRY!!Civilian employed population 16 years and over!!Information",
+	"concept": "SELECTED ECONOMIC CHARACTERISTICS",
+	"predicateType": "int",
+	"group": "N/A",
+	"limit": 0},
+{
+	"id": "DP02_0122E",
+	"label": "ANCESTRY!!Total population",
+	"concept": "SELECTED SOCIAL CHARACTERISTICS IN THE UNITED STATES",
+	"group": "N/A",
+	"limit": 0},
+{
+	"id": "B03001_021E",
+	"label": "Estimate!!Total!!Hispanic or Latino!!South American!!Ecuadorian",
+	"concept": "HISPANIC OR LATINO ORIGIN BY SPECIFIC ORIGIN",
+	"predicateType": "int",
+	"group": "B03001",
+	"limit": 0,
+	"attributes": "B03001_021M,B03001_021MA,B03001_021EA"
+},
+{
+	"id": "B03001_016E",
+	"label": "Estimate!!Total!!Hispanic or Latino!!South American",
+	"concept": "HISPANIC OR LATINO ORIGIN BY SPECIFIC ORIGIN",
+	"predicateType": "int",
+	"group": "B03001",
+	"limit": 0,
+	"attributes": "B03001_016M,B03001_016MA,B03001_016EA"
+},
+{
+	"id": "B04006_022E",
+	"label": "Estimate!!Total!!Brazilian",
+	"concept": "PEOPLE REPORTING ANCESTRY",
+	"predicateType": "int",
+	"group": "B04006",
+	"limit": 0,
+	"attributes": "B04006_022M,B04006_022MA,B04006_022EA"
+},
+{
+	"id": "B03001_025E",
+	"label": "Estimate!!Total!!Hispanic or Latino!!South American!!Venezuelan",
+	"concept": "HISPANIC OR LATINO ORIGIN BY SPECIFIC ORIGIN",
+	"predicateType": "int",
+	"group": "B03001",
+	"limit": 0,
+	"attributes": "B03001_025M,B03001_025MA,B03001_025EA"
+},
+{
+	"id": "DP03_0005PE",
+	"label": "Percent!!EMPLOYMENT STATUS!!Population 16 years and over!!In labor force!!Civilian labor force!!Unemployed",
+	"concept": "SELECTED ECONOMIC CHARACTERISTICS",
+	"predicateType": "float",
+	"group": "DP03",
+	"limit": 0,
+	"attributes": "DP03_0005PM,DP03_0005PMA,DP03_0005PEA"
+},
+{
+	"id": "DP03_0009PE",
+	"label": "Percent!!EMPLOYMENT STATUS!!Civilian labor force!!Unemployment Rate",
+	"concept": "SELECTED ECONOMIC CHARACTERISTICS",
+	"predicateType": "float",
+	"group": "DP03",
+	"limit": 0,
+	"attributes": "DP03_0009PM,DP03_0009PMA,DP03_0009PEA"
+},
+{
+	"id": "B14007I_017E",
+	"label": "Estimate!!Total!!Enrolled in school Hispanic!!Enrolled in college, undergraduate years",
+	"concept": "SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B14007I",
+	"limit": 0,
+	"attributes": "B14007I_017M,B14007I_017MA,B14007I_017EA"
+},
+{
+	"id": "B14007H_017E",
+	"label": "Estimate!!Total!!Enrolled in school White!!Enrolled in college, undergraduate years",
+	"concept": "SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B14007H",
+	"limit": 0,
+	"attributes": "B14007H_017M,B14007H_017MA,B14007H_017EA"
+},
+{
+	"id": "B20017H_001E",
+	"label": "Estimate!!Median earnings in the past 12 months (in 2015 Inflation-adjusted dollars)!!Total White",
+	"concept": "MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2015 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS (WHITE ALONE, NOT HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B20017H",
+	"limit": 0,
+	"attributes": "B20017H_001M,B20017H_001MA,B20017H_001EA"
+},
+{
+	"id": "B20017I_001E",
+	"label": "Estimate!!Median earnings in the past 12 months (in 2015 Inflation-adjusted dollars)!!Total Hispanic",
+	"concept": "MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2015 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B20017I",
+	"limit": 0,
+	"attributes": "B20017I_001M,B20017I_001MA,B20017I_001EA"
+},
+{
+	"id": "DP05_0072PE",
+	"label": "HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!White alone",
+	"concept": "ACS DEMOGRAPHIC AND HOUSING ESTIMATES",
+	"predicateType": "int",
+	"group": "N/A",
+	"limit": 0
+},
+{
+	"id": "B01002H_001E",
+	"label": "Estimate!!Median age!!Total White Only",
+	"concept": "MEDIAN AGE BY SEX (WHITE ALONE, NOT HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B01002H",
+	"limit": 0,
+	"attributes": "B01002H_001M,B01002H_001MA,B01002H_001EA"
+},
+{
+	"id": "B01002I_001E",
+	"label": "Estimate!!Median age!!Total Hispanic",
+	"concept": "MEDIAN AGE BY SEX (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B01002I",
+	"limit": 0,
+	"attributes": "B01002I_001M,B01002I_001MA,B01002I_001EA"
+},
+{
+	"id": "B19049_004E",
+	"label": "Estimate!!Median household income in the past 12 months (in 2016 inflation-adjusted dollars)!!Householder 45 to 64 years",
+	"concept": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2016 INFLATION-ADJUSTED DOLLARS) BY AGE OF HOUSEHOLDER",
+	"predicateType": "int",
+	"group": "B19049",
+	"limit": 0,
+	"attributes": "B19049_004M,B19049_004MA,B19049_004EA"
+},
+{
+	"id": "B19049_003E",
+	"label": "Estimate!!Median household income in the past 12 months (in 2016 inflation-adjusted dollars)!!Householder 25 to 44 years",
+	"concept": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2016 INFLATION-ADJUSTED DOLLARS) BY AGE OF HOUSEHOLDER",
+	"predicateType": "int",
+	"group": "B19049",
+	"limit": 0,
+	"attributes": "B19049_003M,B19049_003MA,B19049_003EA"
+},
+{
+	"id": "B19037I_032E",
+	"label": "Estimate!!Total!!Householder 25 to 44 years Hispanic!!$100,000 to $124,999",
+	"concept": "AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2016 INFLATION-ADJUSTED DOLLARS) (HISPANIC OR LATINO HOUSEHOLDER)",
+	"predicateType": "int",
+	"group": "B19037I",
+	"limit": 0,
+	"attributes": "B19037I_032M,B19037I_032MA,B19037I_032EA"
+},
+{
+	"id": "B19037H_032E",
+	"label": "Estimate!!Total!!Householder 25 to 44 years White!!$100,000 to $124,999",
+	"concept": "AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2016 INFLATION-ADJUSTED DOLLARS) (WHITE ALONE, NOT HISPANIC OR LATINO HOUSEHOLDER)",
+	"predicateType": "int",
+	"group": "B19037H",
+	"limit": 0,
+	"attributes": "B19037H_032M,B19037H_032MA,B19037H_032EA"
+},
+{
+	"id": "B19037B_032E",
+	"label": "Estimate!!Total!!Householder 25 to 44 years Black!!$100,000 to $124,999",
+	"concept": "AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2016 INFLATION-ADJUSTED DOLLARS) (BLACK OR AFRICAN AMERICAN ALONE HOUSEHOLDER)",
+	"predicateType": "int",
+	"group": "B19037B",
+	"limit": 0,
+	"attributes": "B19037B_032M,B19037B_032MA,B19037B_032EA"
+},
+{
+	"id": "B19037_032E",
+	"label": "Estimate!!Total!!Householder 25 to 44 years!!$100,000 to $124,999",
+	"concept": "AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2016 INFLATION-ADJUSTED DOLLARS)",
+	"predicateType": "int",
+	"group": "B19037",
+	"limit": 0,
+	"attributes": "B19037_032M,B19037_032MA,B19037_032EA"
+},
+{
+	"id": "B17024_080E",
+	"label": "Estimate!!Total!!45 to 54 years",
+	"concept": "AGE BY RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS",
+	"predicateType": "int",
+	"group": "B17024",
+	"limit": 0,
+	"attributes": "B17024_080M,B17024_080MA,B17024_080EA"
+},
+{
+	"id": "B17001I_002E",
+	"label": "Estimate!!Total!!Income in the past 12 months below poverty level Hispanic",
+	"concept": "POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B17001I",
+	"limit": 0,
+	"attributes": "B17001I_002M,B17001I_002MA,B17001I_002EA"
+},
+{
+	"id": "B17001H_002E",
+	"label": "Estimate!!Total!!Income in the past 12 months below poverty level White Alone",
+	"concept": "POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE (WHITE ALONE, NOT HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "B17001H",
+	"limit": 0,
+	"attributes": "B17001H_002M,B17001H_002MA,B17001H_002EA"
+},
+{
+	"id": "B17001B_002E",
+	"label": "Estimate!!Total!!Income in the past 12 months below poverty level Black",
+	"concept": "POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE (BLACK OR AFRICAN AMERICAN ALONE)",
+	"predicateType": "int",
+	"group": "B17001B",
+	"limit": 0,
+	"attributes": "B17001B_002M,B17001B_002MA,B17001B_002EA"
+},
+{
+	"id": "B17001A_002E",
+	"label": "Estimate!!Total!!Income in the past 12 months below poverty level",
+	"concept": "POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE (WHITE ALONE)",
+	"predicateType": "int",
+	"group": "B17001A",
+	"limit": 0,
+	"attributes": "B17001A_002M,B17001A_002MA,B17001A_002EA"
+},
+{
+	"id": "B17001_001E",
+	"label": "Estimate!!Total!!Poverty Status in the Past 12 Months",
+	"concept": "POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE",
+	"predicateType": "int",
+	"group": "B17001",
+	"limit": 0,
+	"attributes": "B17001_001M,B17001_001MA,B17001_001EA"
+},
+{
+	"id": "C15010H_001E",
+	"label": "Estimate!!Total!!Bachelor's Degree, Population >=25 (White, Not Hispanic)",
+	"concept": "FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "C15010H",
+	"limit": 0,
+	"attributes": "C15010H_001M,C15010H_001MA,C15010H_001EA"
+},
+{
+	"id": "C15010I_003E",
+	"label": "Estimate!!Total!!Science and Engineering Related Fields!!Bachelor's Degree, Population >=25 (Hispanic)",
+	"concept": "FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "C15010I",
+	"limit": 0,
+	"attributes": "C15010I_003M,C15010I_003MA,C15010I_003EA"
+},
+{
+	"id": "C15010I_004E",
+	"label": "Estimate!!Total!!Business!!Bachelor's Degree, Population >=25 (Hispanic)",
+	"concept": "FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "C15010I",
+	"limit": 0,
+	"attributes": "C15010I_004M,C15010I_004MA,C15010I_004EA"
+},
+{
+	"id": "C15010_001E",
+	"label": "Estimate!!Total!!Bachelor's Degree, Population >=25",
+	"concept": "FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER",
+	"predicateType": "int",
+	"group": "C15010",
+	"limit": 0,
+	"attributes": "C15010_001M,C15010_001MA,C15010_001EA"
+},
+{
+	"id": "C15002I_001E",
+	"label": "Estimate!!Total!!Educational Attainment, Population >=25 (Hispanic)",
+	"concept": "SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "C15002I",
+	"limit": 0,
+	"attributes": "C15002I_001M,C15002I_001MA,C15002I_001EA"
+},
+{
+	"id": "C15002H_001E",
+	"label": "Estimate!!Total!!Educational Attainment, Population >=25 (White, Not Hispanic)",
+	"concept": "SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "C15002H",
+	"limit": 0,
+	"attributes": "C15002H_001M,C15002H_001MA,C15002H_001EA"
+},
+{
+	"id": "C15002A_001E",
+	"label": "Estimate!!Total!!Educational Attainment, Population >=25 (White)",
+	"concept": "SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE)",
+	"predicateType": "int",
+	"group": "C15002A",
+	"limit": 0,
+	"attributes": "C15002A_001M,C15002A_001MA,C15002A_001EA"
+},
+{
+	"id": "C15010I_001E",
+	"label": "Estimate!!Total!!Bachelor's Degree, Population >=25 (Hispanic)",
+	"concept": "FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO)",
+	"predicateType": "int",
+	"group": "C15010I",
+	"limit": 0,
+	"attributes": "C15010I_001M,C15010I_001MA,C15010I_001EA"
+}
+]
